@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Insert Form Data in MySQL Database using PHP</title>
+</head>
+
+<body>
+    <h1>Inputting data into database</h1>
+    <h2>Users</h2>
+    <form action="insert.php" method="post">
+        Username : <input type="text" name="username">
+        <br />
+        Email : <input type="text" name="email">
+        <br />
+        Password : <input type="text" name="password">
+        <br />
+        Reviewer : <input type="checkbox" name="reviewer" value="yes">Reviewer <br>
+        <input type="submit" value="Insert">
+    </form>
+
+    <h2>Roles</h2>
+    <form action="roleinsert.php" method="post">
+        Role: <input type="text" name="role"><br />
+        <input type="submit" value="Insert">
+        <!--by printing on screen: use javascript if firstname = then use image firstname.jpg-->
+    </form>
+
+    <h2>Game</h2>
+    <form action="gameinsert.php" method="post">
+        Title: <input type="text" name="title"><br />
+        Releasedate: <input type="date" name="releasedate"><br />
+        Synopsis: <input type="text" name="synopsis"><br />
+        Developer: <input type="text" name="developer"><br />
+        Publisher: <input type="text" name="publisher"><br />
+        Price: <input type="number" maxlength="6" step="0.01" name="price"><br />
+        <input type="submit" value="Insert">
+    </form>
+
+    <h2>Character</h2>
+    <form action="characterinsert.php" method="post">
+        Firstname: <input type="text" name="firstname"><br />
+        Lastname: <input type="text" name="lastname"><br />
+        Role: <input type="text" name="role"><br />
+        Game: <input type="text" name="game"><br />
+        <input type="submit" value="Insert">
+        <!--by printing on screen: use javascript if firstname = then use image firstname.jpg-->
+    </form>
+
+    <h2>Genres</h2>
+    <form action="genreinsert.php" method="post">
+        Game: <input type="text" name="game"><br />
+        Genre: <input type="text" name="genre"><br />
+        <input type="submit" value="Insert">
+        <!--by printing on screen: use javascript if firstname = then use image firstname.jpg-->
+    </form>
+
+    <h2>Review</h2>
+    <form action="reviewinsert.php" method="post">
+        User: <input type="text" name="user"><br />
+        Review date: <input type="date" name="reviewdate"><br />
+        Game: <input type="text" name="game"><br />
+        Score (give a score from 1 to 5): <input type="number" name="score" maxlength="1" min="1" max="5"><br />
+        Review: <textarea name="review" rows="3" cols="80" maxlength="200">Write your review here...</textarea><br />
+        <input type="submit" value="Insert">
+        <!--by printing on screen: use javascript if firstname = then use image firstname.jpg-->
+    </form>
+
+    <h2>Orders</h2>
+    <form action="orderinsert.php" method="post">
+        User: <input type="text" name="user"><br />
+        Order date: <input type="date" name="orderdate"><br />
+        Game: <input type="text" name="game"><br />
+        Amount: <input type="text" name="amount"><br />
+        <input type="submit" value="Insert">
+    </form>
+
+    <h2>Wishlist</h2>
+    <form action="wishlistinsert.php" method="post">
+        User: <input type="text" name="user"><br />
+        Game: <input type="text" name="game"><br />
+        <input type="submit" value="Insert">
+    </form>
+</body>
+
+</html>
